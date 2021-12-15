@@ -26,11 +26,11 @@ class TableViewController: UITableViewController,CancelButtonDelegate {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(sender is UIBarButtonItem){
-            let nv = segue.destination as! UINavigationController
-            let seg = nv.topViewController! as! ViewController
-            seg.tableViewController = self
-            seg.delete = self
-                seg.index = items.count
+            let nav = segue.destination as! UINavigationController
+            let mySeg = nav.topViewController! as! ViewController
+            mySeg.tableViewController = self
+            mySeg.delete = self
+                mySeg.index = items.count
         }else if(sender is Int){
             
             let nv = segue.destination as! UINavigationController
