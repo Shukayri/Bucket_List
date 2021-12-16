@@ -34,7 +34,7 @@
                     <navigationItem key="navigationItem" id="5Kq-Pa-Trb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hrU-vh-Jtc">
                             <connections>
-                                <segue destination="BFu-uu-Cco" kind="presentation" identifier="" modalPresentationStyle="fullScreen" id="8ih-Y8-HfA"/>
+                                <segue destination="BFu-uu-Cco" kind="presentation" identifier="EditSegue" modalPresentationStyle="fullScreen" id="8ih-Y8-HfA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

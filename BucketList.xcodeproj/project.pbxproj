@@ -14,6 +14,10 @@
 		843CE0C72769348C0026D9A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843CE0C62769348C0026D9A8 /* Main.storyboard */; };
 		843CE0C9276938270026D9A8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CE0C8276938270026D9A8 /* TableViewController.swift */; };
 		843CE0CB2769383D0026D9A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CE0CA2769383D0026D9A8 /* ViewController.swift */; };
+		843CE0CE276B628B0026D9A8 /* BucketList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 843CE0CC276B628B0026D9A8 /* BucketList.xcdatamodeld */; };
+		843CE0D8276B82B60026D9A8 /* AddDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CE0D7276B82B60026D9A8 /* AddDelegate.swift */; };
+		843CE0DB276B95FA0026D9A8 /* BucketListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CE0D9276B95FA0026D9A8 /* BucketListItem+CoreDataClass.swift */; };
+		843CE0DC276B95FA0026D9A8 /* BucketListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CE0DA276B95FA0026D9A8 /* BucketListItem+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		843CE0C62769348C0026D9A8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		843CE0C8276938270026D9A8 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		843CE0CA2769383D0026D9A8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		843CE0CD276B628B0026D9A8 /* BucketList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BucketList.xcdatamodel; sourceTree = "<group>"; };
+		843CE0D7276B82B60026D9A8 /* AddDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDelegate.swift; sourceTree = "<group>"; };
+		843CE0D9276B95FA0026D9A8 /* BucketListItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BucketListItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		843CE0DA276B95FA0026D9A8 /* BucketListItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BucketListItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,8 @@
 		843CE0A2276933EA0026D9A8 = {
 			isa = PBXGroup;
 			children = (
+				843CE0D9276B95FA0026D9A8 /* BucketListItem+CoreDataClass.swift */,
+				843CE0DA276B95FA0026D9A8 /* BucketListItem+CoreDataProperties.swift */,
 				843CE0AD276933EA0026D9A8 /* BucketList */,
 				843CE0AC276933EA0026D9A8 /* Products */,
 			);
@@ -59,8 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				843CE0AE276933EA0026D9A8 /* AppDelegate.swift */,
+				843CE0CC276B628B0026D9A8 /* BucketList.xcdatamodeld */,
 				843CE0B0276933EA0026D9A8 /* SceneDelegate.swift */,
 				843CE0CA2769383D0026D9A8 /* ViewController.swift */,
+				843CE0D7276B82B60026D9A8 /* AddDelegate.swift */,
 				843CE0C8276938270026D9A8 /* TableViewController.swift */,
 				843CE0C62769348C0026D9A8 /* Main.storyboard */,
 				843CE0B7276933EB0026D9A8 /* Assets.xcassets */,
@@ -141,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843CE0D8276B82B60026D9A8 /* AddDelegate.swift in Sources */,
+				843CE0DB276B95FA0026D9A8 /* BucketListItem+CoreDataClass.swift in Sources */,
 				843CE0AF276933EA0026D9A8 /* AppDelegate.swift in Sources */,
 				843CE0C9276938270026D9A8 /* TableViewController.swift in Sources */,
+				843CE0CE276B628B0026D9A8 /* BucketList.xcdatamodeld in Sources */,
 				843CE0CB2769383D0026D9A8 /* ViewController.swift in Sources */,
+				843CE0DC276B95FA0026D9A8 /* BucketListItem+CoreDataProperties.swift in Sources */,
 				843CE0B1276933EA0026D9A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +372,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		843CE0CC276B628B0026D9A8 /* BucketList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				843CE0CD276B628B0026D9A8 /* BucketList.xcdatamodel */,
+			);
+			currentVersion = 843CE0CD276B628B0026D9A8 /* BucketList.xcdatamodel */;
+			path = BucketList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 843CE0A3276933EA0026D9A8 /* Project object */;
 }
